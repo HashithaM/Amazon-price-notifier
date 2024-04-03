@@ -1,41 +1,41 @@
 # Amazon-price-notifier
 This code notity abou the amazon prices
-This Python script performs the following tasks:
+This Python script utilizes Selenium WebDriver to automate interactions with web pages. Let's break down its functionality:
 
-Imports:
+Importing Libraries:
 
-requests for making HTTP requests.
-BeautifulSoup from bs4 for parsing HTML.
-lxml for parsing XML and HTML.
-smtplib for sending emails.
-URL and Headers:
+The script imports necessary modules from Selenium (webdriver, ElementClickInterceptedException, NoSuchElementException, chrome.service, By, Keys) and the time module.
+Setting up WebDriver:
 
-Defines the URL of the Amazon product page.
-Sets headers to simulate a request from a web browser to prevent blocking by the website.
-HTTP Request:
+It configures the Chrome WebDriver with the path to the Chrome driver executable and sets up options for Chrome.
+Interacting with Web Elements:
 
-Sends an HTTP GET request to the Amazon product page, including the defined headers.
-Retrieves the HTML content of the page.
-Parsing HTML:
+There are several examples commented out in the code that demonstrate interactions with various web elements:
+Finding and clicking buttons and links.
+Entering text into input fields.
+Performing actions like pressing Enter key.
+Automating Cookie Clicker Game:
 
-Uses BeautifulSoup to parse the HTML content.
-Finds the price of the product using its HTML tag and class.
-Price Processing:
+The script navigates to a Cookie Clicker game page.
+It continuously clicks on a cookie element.
+After a certain time (timeout), it checks for available upgrades in the store and purchases the most expensive one that can be afforded.
+This cycle continues for a duration of five minutes (five_min).
+At the end, it prints the cookies per second rate.
+Quitting WebDriver:
 
-Extracts the price value from the parsed HTML text.
-Converts the price to a floating-point number for comparison.
-Email Function:
+After completing the task, the WebDriver session is terminated.
+Describing the Code:
 
-Defines a function send_mail() to send an email notification if the price of the product drops below a certain threshold.
-Email Notification:
+The script demonstrates various interactions with web elements using Selenium WebDriver.
+It also showcases the automation of a simple game (Cookie Clicker) by continuously clicking on a cookie, purchasing upgrades, and monitoring the cookies per second rate.
+Some comments and questions within the code indicate the author's thought process or points of confusion.
+Overall, this script provides a practical example of how Selenium WebDriver can be used for web automation tasks, from basic interactions with elements to more complex tasks like game automation.
 
-Checks if the price of the product is less than $30.
-If the condition is met, calls the send_mail() function to send an email notification.
-Describe Functionality:
 
-The script fetches the price of a specific SSD product from Amazon.
-If the price drops below $30, it sends an email notification to a specified recipient (in this case, kanthiwijesinghe71@gmail.com) with a predefined message indicating the price drop and a link to the product page.
-Overall, the script is a basic example of web scraping and email notification functionality. It demonstrates how to extract information from a web page and automate actions based on specific conditions, such as price thresholds.
+
+
+
+
 
 
 

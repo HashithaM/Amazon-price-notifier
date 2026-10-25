@@ -25,4 +25,4 @@ Update the ChromeDriver path in `main.py` for your system before running.
 
 ## Notes
 
-This is a learning project rather than a production price-monitoring service. The commented examples include personal-looking sample data; replace those values with obvious placeholders before sharing or reusing the code.
+This is a learning project rather than a production price-monitoring service. Commented form examples use reserved, non-personal placeholder data.
